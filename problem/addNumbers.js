@@ -14,6 +14,14 @@ console.log("-------------------------------");
 const numbers = arguments.slice(2);
 console.log(numbers);
 console.log('#####################3');
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+    // How do I add numbers toghether ?
+    console.log("i ", i);
+    console.log("numbers[i] ",numbers[i]);
+    sum = sum + Number(numbers[i]);
+}
+
+console.log("RESULT !!!!!", sum);
 // once command line arguments have come back...
-// How do I add numbers toghether ?
 // How do I add multiple Numbers toghether (where size of elements is different) ?
