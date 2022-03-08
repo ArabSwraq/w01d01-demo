@@ -8,14 +8,15 @@
 // splice, slice
 const addNumbers = function(arr) {
     let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        // How do I add numbers toghether ?
-        sum = sum + Number(arr[i]);
+    // For of ....
+    for (let element of arr) {
+        sum += Number(element);  // sum = sum + ____
+
     }    
-    console.log("RESULT !!!!!", sum);
+    return sum;
 }
 
 const arguments = process.argv;
 const numbers = arguments.slice(2);
-addNumbers(numbers);
-addNumbers([4,4,4,4]);
+const answer = addNumbers(numbers);
+console.log("Input: ",numbers, "Output ==>",answer);
