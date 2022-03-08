@@ -6,15 +6,16 @@
 // 15 >
 
 // splice, slice
-const addNumbers = function() {
-    const arguments = process.argv;
-    const numbers = arguments.slice(2);
+const addNumbers = function(arr) {
     let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         // How do I add numbers toghether ?
-        sum = sum + Number(numbers[i]);
+        sum = sum + Number(arr[i]);
     }    
     console.log("RESULT !!!!!", sum);
 }
 
-addNumbers();
+const arguments = process.argv;
+const numbers = arguments.slice(2);
+addNumbers(numbers);
+addNumbers([4,4,4,4]);
